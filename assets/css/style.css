@@ -1,0 +1,547 @@
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+/* ==================== cover ===================== */
+#cover {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cover-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 7px 7px;
+  border-style: double;
+  border-color: #dfba53;
+}
+
+.cover-content {
+  text-align: center;
+}
+
+.cover-content h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cover-ornamnet-atas img {
+  width: 200px;
+  padding-top: 30px;
+}
+
+.cover-ornamnet-bawah img {
+  width: 150px;
+  padding-bottom: 30px;
+}
+
+.text-dari {
+  font-family: "Open Sans", sans-serif;
+  color: #aaa;
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+.text-untuk {
+  font-family: "Raleway", sans-serif;
+  color: #c7ae65;
+  font-size: 22px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.cover-content span {
+  color: #aaa;
+}
+
+#btn-cover {
+  border: none;
+  background: #dfba53;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+/* ======================== akhir cover ======================== */
+/* ======================== slider  ======================== */
+.carousel {
+  position: relative;
+}
+
+.carousel-box {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.carousel-box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 40%;
+  border-top: 2px solid white;
+}
+
+.carousel-ucapan {
+  font-family: "Italianno", cursive;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-box::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 40%;
+  border-top: 2px solid white;
+}
+
+.carousel-inner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(153, 218, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  bottom: 0;
+  left: 0;
+}
+/* ======================== akhir slider  ======================== */
+/* ======================== pengantin  ======================== */
+#pengantin {
+  margin-top: 30px;
+}
+.judul {
+  font-family: "Italianno", cursive;
+  font-size: 62px;
+  color: #ff6565;
+  text-transform: none;
+}
+.nama-pengantin {
+  margin: 0;
+  margin-top: 30px;
+  font-family: Italianno;
+  font-size: 48px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.pengantin p {
+  font-weight: 600;
+  font-family: "Sarabun", sans-serif;
+  color: #4a4a4a;
+}
+
+.img-cincin {
+  width: 120px;
+}
+/* ======================== akhir pengantin  ======================== */
+/* ======================== protokol  ======================== */
+#protokol {
+  background-color: #e5e5e5;
+  margin: 0;
+  margin-top: 30px;
+  padding: 40px 15px;
+}
+
+#protokol span {
+  font-family: "Raleway", sans-serif;
+}
+
+.container-protokol h4 {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #111111;
+}
+.container-protokol p,
+.container-protokol span {
+  color: #626262;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.img-protokol {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.container-acara {
+  margin: 0;
+  margin-top: 30px;
+  padding: 40px;
+}
+/* ======================== akhir protokol  ======================== */
+/* ======================== video  ======================== */
+.video-container {
+  height: 800px;
+}
+/* ======================== akhir video  ======================== */
+/* ======================== salam pembuka  ======================== */
+.salam-pembuka {
+  padding: 30px 0px;
+}
+/* ======================== akhri salam pembuka  ======================== */
+/* ======================== waktu ======================== */
+.waktu-pernikahan p,
+.waktu-resepsi p {
+  font-family: "Italianno", cursive;
+  text-align: center;
+  color: #ff6565;
+  text-transform: capitalize;
+  font-size: 32px;
+}
+
+.alamat-acara {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 14px !important;
+  color: #626262 !important;
+}
+
+.waktu-box::after,
+.waktu-box::after,
+.waktu-box::after {
+  content: ":";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.waktu span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6565;
+  font-style: italic;
+}
+
+.waktu div {
+  color: #666666;
+  font-weight: 400;
+}
+/* ======================== akhir waktu ======================== */
+/* ======================== acara  ======================== */
+#box-acara {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0px;
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-waktu {
+  width: 700px;
+  border: 3px solid #bea15d;
+  padding: 120px 15px 140px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.ornamnet-atas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -80px;
+  margin-left: -70px;
+  width: 300px;
+}
+
+.ornamnet-bawah {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -80px;
+  margin-right: -70px;
+  transform: rotate(180deg);
+  width: 300px;
+}
+/* ======================== akhir acara  ======================== */
+/* ======================== salam penutup  ======================== */
+.salam-penutup {
+  padding: 30px 0px;
+}
+/* ======================== akhir salam penutup  ======================== */
+/* ======================== gallery  ======================== */
+#gallery {
+  padding: 30px 0px;
+  background-color: #f1f1f1;
+}
+
+.img-gallery {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.carousel__track,
+.fancybox__counter,
+.fancybox__button--thumbs,
+/* .fancybox__button--slideshow, */
+.fancybox__button--fullscreen,
+.fancybox__button--zoom {
+  display: none !important;
+}
+/* ======================== akhir gallery ======================== */
+/* ======================== maps  ======================== */
+#btn-pernikahan,
+#btn-resepsi {
+  border-radius: 0px;
+}
+
+#maps {
+  position: relative;
+}
+.maps h2 {
+  padding: 30px 0px;
+}
+.btn-maps {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, 0);
+  box-shadow: 0 10px 20px 0 rgb(255 101 101 / 30%);
+  background-color: #ff6565;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0.575rem 0.95rem;
+  height: auto;
+  border-radius: 4px;
+}
+.btn-maps:hover {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid;
+}
+.maps-container {
+  width: 100%;
+  height: 500px;
+}
+/* ======================== akhir maps  ======================== */
+/* ======================== separator ======================== */
+#separator h2 {
+  margin: 0;
+  margin-top: 30px;
+}
+/* ======================== akhir separator ======================== */
+/* ======================== gift ======================== */
+#gift {
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.img-qr {
+  width: 200px;
+}
+/* ======================== akhir gift ======================== */
+/* ======================== buku tamu ======================== */
+#buku-tamu {
+  padding: 40px 0px;
+}
+
+#nama,
+#pesan,
+#kehadiran,
+.btn-tamu {
+  border-radius: 2px;
+  border: 1px solid #ff6565;
+}
+/* ======================== akhir buku tamu ======================== */
+/* ======================== audio ======================== */
+#audio {
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px 0px;
+}
+/* ======================== akhir audio ======================== */
+/* ======================== nama pengantin bawah  ======================== */
+.nama {
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px 0px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.nama h1 {
+  min-height: 200px;
+  font-family: "Italianno", cursive;
+  font-size: 62px;
+  color: #ff6565;
+  position: relative;
+}
+
+.nama h1 .kiri {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -70%);
+}
+
+.nama h1 .tengah {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Italianno", cursive;
+  font-size: 200px;
+  text-align: center;
+  color: #ff6565;
+}
+
+.nama h1 .kanan {
+  position: absolute;
+  right: 45%;
+  bottom: 50%;
+  transform: translate(150%, 70%);
+}
+/* ======================== akhir nama pengantin bawah  ======================== */
+/* ======================== footer  ======================== */
+#footer {
+  font-weight: bold;
+  margin: 0;
+  background-color: #ff6565;
+  padding: 40px;
+  color: white;
+}
+
+#footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer .btn-footer {
+  text-decoration: none;
+  background-color: #f1f1f1;
+  color: #ff6565;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px 0 #ed3030;
+  padding: 0.575rem 0.95rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#footer-socet {
+  padding: 10px;
+  color: #111111;
+  text-align: center;
+  font-weight: bold;
+}
+#footer-socet p {
+  margin: 0;
+}
+/* ======================== akhir footer  ======================== */
+@media (max-width: 768px) {
+  .img-cincin {
+    width: 90px;
+  }
+
+  .judul {
+    font-size: 32px;
+  }
+  .carousel-box {
+    height: 70%;
+    width: 70%;
+  }
+
+  .carousel-box::before,
+  .carousel-box::after {
+    width: 35%;
+  }
+
+  .carousel-ucapan {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-cincin {
+    width: 90px;
+    padding: 30px 0px;
+  }
+
+  .judul {
+    font-size: 28px;
+  }
+  .carousel-box::before,
+  .carousel-box::after {
+    width: 25%;
+  }
+
+  .carousel-ucapan {
+    font-size: 24px;
+  }
+
+  .box-waktu {
+    width: 300px;
+  }
+
+  .nama h1 {
+    font-size: 32px;
+  }
+
+  .nama h1 .tengah {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .img-protokol {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  #protokol span {
+    font-size: 13px;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+}
